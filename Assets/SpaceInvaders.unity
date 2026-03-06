@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 911860872}
   - component: {fileID: 911860871}
   m_Layer: 0
-  m_Name: Sprite Collection_0
+  m_Name: Purple Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
