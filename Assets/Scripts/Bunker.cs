@@ -9,7 +9,7 @@ public class Bunker : MonoBehaviour
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Invader"))
         {
-            health--;
+            this.gameObject.SetActive(false);
         }else if (other.gameObject.layer == LayerMask.NameToLayer("Missile"))
         {
             health--;
