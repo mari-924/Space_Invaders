@@ -7,9 +7,15 @@ public class player : MonoBehaviour
     public Projectile laserPrefab;
     public float speed = 5.0f;
     public bool _laserActive;
+    private int health = 3;
+    public System.Action onPlayerDied;
+    public GameObject gameOverScreen; 
+    private bool _isDead = false;
 
     void Update()
     {
+        if (_isDead) return;
+
         if(Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed)
         {
             this.transform.position += Vector3.left * this.speed * Time.deltaTime;
@@ -42,10 +48,39 @@ public class player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Invader") 
-            || other.gameObject.layer == LayerMask.NameToLayer("Missile")){
-                SceneManager.LoadScene(SceneManager.GetActiveScene.name);
+        if(other.gameObject.layer == LayerMask.NameToLayer("Invader") ){
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             
+        }else if(other.gameObject.layer == LayerMask.NameToLayer("Missile"))
+        {
+            health--;
         }
+
+        if(health <= 0)
+        {
+            onPlayerDied?.Invoke();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }else {
+            this.transform.position = new Vector3(0, this.transform.position.y, 0);
+        }
+    }
+
+    private void TriggerGameOver()
+    {
+        _isDead = true;
+
+        if(gameOverScreen != null)
+        {
+            gameOverScreen.SetActive(true);
+        }
+
+        GetComponent<SpriteRenderer>().enabled = false;
+        Time.timeScale = 0f;
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
