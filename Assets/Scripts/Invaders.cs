@@ -45,22 +45,23 @@ public class Invaders : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time >= nextMoveTime)
+        if (Time.unscaledTime >= nextMoveTime)
         {
             MoveInvaders();
-            nextMoveTime = Time.time + movementFrequency;
+            nextMoveTime = Time.unscaledTime + movementFrequency;
         }
     }
 
     private void MoveInvaders()
     {
-        float speedMultiplier = this.speed.Evaluate(this.percentKilled);
+        float speedMultiplier = this.speed != null ? this.speed.Evaluate(this.percentKilled) : 1f;
         this.transform.position += direction * speedMultiplier;
 
         foreach (Transform child in this.transform)
         {
             if (child.gameObject.activeInHierarchy) {
-                child.GetComponent<Invader>().StepAnimation();
+                Invader invaderScript = child.GetComponent<Invader>();
+                if (invaderScript != null) invaderScript.StepAnimation();
             }
         }
 
@@ -112,7 +113,7 @@ public class Invaders : MonoBehaviour
     private void InvaderKilled(Invader invader)
     {
         this.numKilled++;
-        GameBehavior.Instance.AddScore(invader.scoreValue);
+        if (GameBehavior.Instance != null) GameBehavior.Instance.AddScore(invader.scoreValue);
         if (this.numKilled >= this.totalInvaders) {
             onAllInvadersKilled?.Invoke();
         }

@@ -18,6 +18,10 @@ public class Invader : MonoBehaviour
     public Action<Invader> killed;
     private bool _isExploding = false;
 
+    private void Start()
+    {
+    InvokeRepeating(nameof(StepAnimation), 0.5f, 0.5f);
+    }
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -26,7 +30,8 @@ public class Invader : MonoBehaviour
 
     public void StepAnimation()
     {
-        if (_isExploding) return;
+        if (_isExploding || animationSprites == null || animationSprites.Length == 0) return;
+        
         animationFrame = (animationFrame + 1) % animationSprites.Length;
         spriteRenderer.sprite = animationSprites[animationFrame];
     }
