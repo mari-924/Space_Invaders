@@ -10,27 +10,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000018833026049398, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.24
+      value: 1.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000018833026049398, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.21
       objectReference: {fileID: 0}
     - target: {fileID: 2402818087421411893, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1680216543, guid: 9a6bb0c620153fb428a0cae47a58d1f5, type: 3}
+      objectReference: {fileID: 351766219172301795, guid: fedbf3b76cf6c6a479e3a7a0b9c16a95, type: 3}
     - target: {fileID: 2793757826466412965, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
       propertyPath: m_Name
       value: Invader_04 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8381110251041082792, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.15
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8381110251041082792, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.15
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8381110251041082792, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.15
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8381110251041082792, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77,13 +81,29 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8546855869808450971, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
+      propertyPath: 'shootingSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 351766219172301795, guid: fedbf3b76cf6c6a479e3a7a0b9c16a95, type: 3}
+    - target: {fileID: 8546855869808450971, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
+      propertyPath: 'shootingSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1217184747, guid: fedbf3b76cf6c6a479e3a7a0b9c16a95, type: 3}
+    - target: {fileID: 8546855869808450971, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
+      propertyPath: 'shootingSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 351766219172301795, guid: fedbf3b76cf6c6a479e3a7a0b9c16a95, type: 3}
+    - target: {fileID: 8546855869808450971, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
       propertyPath: 'animationSprites.Array.data[0]'
       value: 
-      objectReference: {fileID: -1680216543, guid: 9a6bb0c620153fb428a0cae47a58d1f5, type: 3}
+      objectReference: {fileID: 351766219172301795, guid: fedbf3b76cf6c6a479e3a7a0b9c16a95, type: 3}
     - target: {fileID: 8546855869808450971, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
       propertyPath: 'animationSprites.Array.data[1]'
       value: 
-      objectReference: {fileID: -1767547652, guid: 9a6bb0c620153fb428a0cae47a58d1f5, type: 3}
+      objectReference: {fileID: 7944310333183737541, guid: 42863283adb236a41bc43eec9505ccd5, type: 3}
+    - target: {fileID: 8546855869808450971, guid: e10672b68ed631640a4d4b1dc0aa336b, type: 3}
+      propertyPath: 'explosionSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 351766219172301795, guid: fedbf3b76cf6c6a479e3a7a0b9c16a95, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
