@@ -9,17 +9,33 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -1454016257258965835, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
+      propertyPath: shootingSprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1454016257258965835, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: animationSprites.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -1454016257258965835, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
+      propertyPath: 'shootingSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4826615402252556988, guid: 5080ff2cc4dd58e47890ab81842702fb, type: 3}
+    - target: {fileID: -1454016257258965835, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
+      propertyPath: 'shootingSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: -167459595, guid: 5080ff2cc4dd58e47890ab81842702fb, type: 3}
+    - target: {fileID: -1454016257258965835, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
+      propertyPath: 'shootingSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: -52520534, guid: 5080ff2cc4dd58e47890ab81842702fb, type: 3}
+    - target: {fileID: -1454016257258965835, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: 'animationSprites.Array.data[0]'
       value: 
-      objectReference: {fileID: 1192550883305499523, guid: 9a6bb0c620153fb428a0cae47a58d1f5, type: 3}
+      objectReference: {fileID: 4826615402252556988, guid: 5080ff2cc4dd58e47890ab81842702fb, type: 3}
     - target: {fileID: -1454016257258965835, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: 'animationSprites.Array.data[1]'
       value: 
-      objectReference: {fileID: -1359480513, guid: 9a6bb0c620153fb428a0cae47a58d1f5, type: 3}
+      objectReference: {fileID: -52520534, guid: 5080ff2cc4dd58e47890ab81842702fb, type: 3}
     - target: {fileID: 1201902682235554904, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_Size.x
       value: 0.25
@@ -46,11 +62,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1201902682235554904, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.28
+      value: 2.12
       objectReference: {fileID: 0}
     - target: {fileID: 1201902682235554904, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.18
+      value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 1201902682235554904, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
@@ -75,22 +91,22 @@ PrefabInstance:
     - target: {fileID: 4329724621414312731, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1192550883305499523, guid: 9a6bb0c620153fb428a0cae47a58d1f5, type: 3}
+      objectReference: {fileID: 4826615402252556988, guid: 5080ff2cc4dd58e47890ab81842702fb, type: 3}
     - target: {fileID: 4329724621414312731, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7566448239834752134, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7566448239834752134, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7566448239834752134, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7566448239834752134, guid: 14fd90d7c27c5d146b01c4c59e881d87, type: 3}
       propertyPath: m_LocalPosition.x
